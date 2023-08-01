@@ -83,18 +83,18 @@ CMakeFiles/firmware.dir/src/parrots.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firmware.dir/src/parrots.cpp.s"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/src/parrots.cpp -o CMakeFiles/firmware.dir/src/parrots.cpp.s
 
-CMakeFiles/firmware.dir/lib/st7789.cpp.obj: CMakeFiles/firmware.dir/flags.make
-CMakeFiles/firmware.dir/lib/st7789.cpp.obj: ../lib/st7789.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/firmware.dir/lib/st7789.cpp.obj"
-	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firmware.dir/lib/st7789.cpp.obj -c /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/lib/st7789.cpp
+CMakeFiles/firmware.dir/lib/st77xx.cpp.obj: CMakeFiles/firmware.dir/flags.make
+CMakeFiles/firmware.dir/lib/st77xx.cpp.obj: ../lib/st77xx.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/firmware.dir/lib/st77xx.cpp.obj"
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/firmware.dir/lib/st77xx.cpp.obj -c /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/lib/st77xx.cpp
 
-CMakeFiles/firmware.dir/lib/st7789.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firmware.dir/lib/st7789.cpp.i"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/lib/st7789.cpp > CMakeFiles/firmware.dir/lib/st7789.cpp.i
+CMakeFiles/firmware.dir/lib/st77xx.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firmware.dir/lib/st77xx.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/lib/st77xx.cpp > CMakeFiles/firmware.dir/lib/st77xx.cpp.i
 
-CMakeFiles/firmware.dir/lib/st7789.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firmware.dir/lib/st7789.cpp.s"
-	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/lib/st7789.cpp -o CMakeFiles/firmware.dir/lib/st7789.cpp.s
+CMakeFiles/firmware.dir/lib/st77xx.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firmware.dir/lib/st77xx.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/lib/st77xx.cpp -o CMakeFiles/firmware.dir/lib/st77xx.cpp.s
 
 CMakeFiles/firmware.dir/lib/tpl0401.cpp.obj: CMakeFiles/firmware.dir/flags.make
 CMakeFiles/firmware.dir/lib/tpl0401.cpp.obj: ../lib/tpl0401.cpp
@@ -935,7 +935,7 @@ CMakeFiles/firmware.dir/home/ryzerth/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.
 firmware_OBJECTS = \
 "CMakeFiles/firmware.dir/src/main.cpp.obj" \
 "CMakeFiles/firmware.dir/src/parrots.cpp.obj" \
-"CMakeFiles/firmware.dir/lib/st7789.cpp.obj" \
+"CMakeFiles/firmware.dir/lib/st77xx.cpp.obj" \
 "CMakeFiles/firmware.dir/lib/tpl0401.cpp.obj" \
 "CMakeFiles/firmware.dir/home/ryzerth/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/firmware.dir/home/ryzerth/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
@@ -1013,7 +1013,7 @@ firmware_EXTERNAL_OBJECTS =
 
 firmware.elf: CMakeFiles/firmware.dir/src/main.cpp.obj
 firmware.elf: CMakeFiles/firmware.dir/src/parrots.cpp.obj
-firmware.elf: CMakeFiles/firmware.dir/lib/st7789.cpp.obj
+firmware.elf: CMakeFiles/firmware.dir/lib/st77xx.cpp.obj
 firmware.elf: CMakeFiles/firmware.dir/lib/tpl0401.cpp.obj
 firmware.elf: CMakeFiles/firmware.dir/home/ryzerth/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 firmware.elf: CMakeFiles/firmware.dir/home/ryzerth/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj

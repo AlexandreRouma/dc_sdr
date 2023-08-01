@@ -1867,32 +1867,32 @@ home/ryzerth/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/home/ryzerth/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/ryzerth/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
-lib/st7789.obj: lib/st7789.cpp.obj
+lib/st77xx.obj: lib/st77xx.cpp.obj
 
-.PHONY : lib/st7789.obj
+.PHONY : lib/st77xx.obj
 
 # target to build an object file
-lib/st7789.cpp.obj:
-	$(MAKE) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/st7789.cpp.obj
-.PHONY : lib/st7789.cpp.obj
+lib/st77xx.cpp.obj:
+	$(MAKE) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/st77xx.cpp.obj
+.PHONY : lib/st77xx.cpp.obj
 
-lib/st7789.i: lib/st7789.cpp.i
+lib/st77xx.i: lib/st77xx.cpp.i
 
-.PHONY : lib/st7789.i
+.PHONY : lib/st77xx.i
 
 # target to preprocess a source file
-lib/st7789.cpp.i:
-	$(MAKE) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/st7789.cpp.i
-.PHONY : lib/st7789.cpp.i
+lib/st77xx.cpp.i:
+	$(MAKE) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/st77xx.cpp.i
+.PHONY : lib/st77xx.cpp.i
 
-lib/st7789.s: lib/st7789.cpp.s
+lib/st77xx.s: lib/st77xx.cpp.s
 
-.PHONY : lib/st7789.s
+.PHONY : lib/st77xx.s
 
 # target to generate assembly for a file
-lib/st7789.cpp.s:
-	$(MAKE) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/st7789.cpp.s
-.PHONY : lib/st7789.cpp.s
+lib/st77xx.cpp.s:
+	$(MAKE) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/st77xx.cpp.s
+.PHONY : lib/st77xx.cpp.s
 
 lib/tpl0401.obj: lib/tpl0401.cpp.obj
 
@@ -2176,9 +2176,9 @@ help:
 	@echo "... home/ryzerth/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
 	@echo "... home/ryzerth/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/ryzerth/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... lib/st7789.obj"
-	@echo "... lib/st7789.i"
-	@echo "... lib/st7789.s"
+	@echo "... lib/st77xx.obj"
+	@echo "... lib/st77xx.i"
+	@echo "... lib/st77xx.s"
 	@echo "... lib/tpl0401.obj"
 	@echo "... lib/tpl0401.i"
 	@echo "... lib/tpl0401.s"

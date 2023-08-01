@@ -5,10 +5,10 @@
 namespace ST77XX {
     Driver::Driver(int mosiGPIO, int clkGPIO, int dcGPIO, int rstGPIO, int csGPIO, int blGPIO, int teGPIO) :
         SPI(((mosiGPIO >> 3) & 1) ? spi1 : spi0),
-        DC_GPIO(DC_GPIO),
-        RST_GPIO(RST_GPIO),
-        BL_GPIO(BL_GPIO),
-        TE_GPIO(TE_GPIO)
+        DC_GPIO(dcGPIO),
+        RST_GPIO(rstGPIO),
+        BL_GPIO(blGPIO),
+        TE_GPIO(teGPIO)
     {
         // Configure GPIOs
         gpio_set_function(mosiGPIO, GPIO_FUNC_SPI);
@@ -29,13 +29,24 @@ namespace ST77XX {
         gpio_init(TE_GPIO);
         gpio_set_dir(TE_GPIO, false);
 
-        // TODO: Finish the rest of the GPIOs
+        //TODO: Finish the rest of the GPIOs
 
-        // Configure SPI bus
-        spi_init(SPI, 1000000); // TODO: Max supported is 62500000, try after basic testing
+        //Configure SPI bus
+        spi_init(SPI, 62500000);
+        spi_set_format(SPI, 8, SPI_CPOL_1, SPI_CPHA_0, SPI_MSB_FIRST);
 
         // Initialize the display
         // TODO
+    }
+
+    Driver& Driver::operator=(const Driver&& b) {
+        SPI = b.SPI;
+        BL_GPIO = b.BL_GPIO;
+        DC_GPIO = b.DC_GPIO;
+        RST_GPIO = b.RST_GPIO;
+        TE_GPIO = b.TE_GPIO;
+        colorMode = b.colorMode;
+        return *this;
     }
 
     void Driver::reset(ResetType type) {
@@ -85,10 +96,10 @@ namespace ST77XX {
     void Driver::blit(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint8_t* bitmap) {
         // Update start address
         setColumnAddress(x, x + w - 1);
-        setColumnAddress(y, y + h - 1);
+        setRowAddress(y, y + h - 1);
 
         // Write bitmap data
-        sendCommand(CMD_RAMWR, bitmap, 0/*TODO*/);
+        sendCommand(CMD_RAMWR, bitmap, w*h*2/*TODO*/);
 
         // Send NOP to finish the command (TODO: Check if actually needed)
         sendCommand(CMD_NOP);
@@ -160,6 +171,31 @@ namespace ST77XX {
         sendCommand(CMD_COLMOD, &param, 1);
     }
 
+    void Driver::fill(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color) {
+        // Update start address
+        setColumnAddress(x, x + w - 1);
+        setRowAddress(y, y + h - 1);
+
+        // Enter command mode
+        gpio_put(DC_GPIO, DC_COMMAND);
+
+        // Send command byte
+        uint8_t data = CMD_RAMWR;
+        spi_write_blocking(SPI, &data, 1);
+
+        // Enter data mode
+        gpio_put(DC_GPIO, DC_DATA);
+
+        // Send all pixels
+        int pcount = w*h;
+        for (int i = 0; i < pcount; i++) {
+            spi_write_blocking(SPI, (uint8_t*)&color, 2);
+        }
+
+        // Send NOP to finish the command (TODO: Check if actually needed)
+        sendCommand(CMD_NOP);
+    }
+
     void Driver::setColumnAddress(uint16_t start, uint16_t end) {
         // Encode parameters
         uint8_t args[4]  = {
@@ -205,5 +241,7 @@ namespace ST77XX {
             // Send bytes
             spi_write_blocking(SPI, data, len);
         }
+
+        //sleep_ms(120);
     }
 }

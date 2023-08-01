@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../lib/st7789.h
+../lib/st77xx.h
 stdint.h
 -
 stdlib.h
@@ -88,6 +88,8 @@ hardware/platform_defs.h
 
 /home/ryzerth/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
 
+/home/ryzerth/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h
+
 /home/ryzerth/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
 
 /home/ryzerth/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
@@ -97,6 +99,12 @@ hardware/platform_defs.h
 /home/ryzerth/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
 
 /home/ryzerth/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
+
+/home/ryzerth/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h
+hardware/address_mapped.h
+/home/ryzerth/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
+hardware/regs/i2c.h
+/home/ryzerth/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/i2c.h
 
 /home/ryzerth/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
 hardware/address_mapped.h
@@ -152,6 +160,16 @@ hardware/structs/sio.h
 hardware/structs/padsbank0.h
 /home/ryzerth/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/hardware/structs/padsbank0.h
 
+/home/ryzerth/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h
+pico.h
+/home/ryzerth/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/pico.h
+pico/time.h
+/home/ryzerth/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/pico/time.h
+hardware/structs/i2c.h
+/home/ryzerth/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/hardware/structs/i2c.h
+hardware/regs/dreq.h
+/home/ryzerth/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/hardware/regs/dreq.h
+
 /home/ryzerth/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h
 pico.h
 /home/ryzerth/pico-sdk/src/rp2_common/hardware_spi/include/hardware/pico.h
@@ -197,12 +215,16 @@ stdio.h
 -
 pico/stdlib.h
 /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/src/pico/stdlib.h
-st7789.h
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/src/st7789.h
+st77xx.h
+/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/src/st77xx.h
 tpl0401.h
 /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/src/tpl0401.h
 parrots.h
 /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/src/parrots.h
+hardware/gpio.h
+-
+hardware/i2c.h
+-
 
 /mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/src/parrots.h
 stdint.h

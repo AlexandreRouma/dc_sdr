@@ -80,10 +80,14 @@ namespace ST77XX {
 
     class Driver {
     public:
+        // TODO: This is shit
+        Driver() {}
         Driver(int mosiGPIO, int clkGPIO, int dcGPIO, int rstGPIO, int csGPIO = -1, int blGPIO = -1, int teGPIO = -1);
-        Driver(Driver& b) = delete;
+        //Driver(Driver& b) = delete;
         Driver(Driver&& b);
-        ~Driver();
+        ~Driver() {}
+
+        Driver& operator=(const Driver&& b);
 
         /**
          * Perform a software or hardware reset. Takes 120ms.
@@ -170,17 +174,19 @@ namespace ST77XX {
         */
         void setColorMode(ColorMode mode);
 
-    protected:
+        void fill(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color);
+
+    //protected:
         void sendCommand(Command cmd, const uint8_t* data = NULL, int len = 0);
 
         void setColumnAddress(uint16_t start, uint16_t end);
         void setRowAddress(uint16_t start, uint16_t end);
 
-        spi_inst_t* const SPI;
-        const int BL_GPIO;
-        const int DC_GPIO;
-        const int RST_GPIO;
-        const int TE_GPIO;
+        spi_inst_t* SPI;
+        int BL_GPIO;
+        int DC_GPIO;
+        int RST_GPIO;
+        int TE_GPIO;
 
         ColorMode colorMode;
     };

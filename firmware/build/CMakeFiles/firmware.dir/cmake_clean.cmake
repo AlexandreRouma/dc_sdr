@@ -69,7 +69,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/firmware.dir/home/ryzerth/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
   "CMakeFiles/firmware.dir/home/ryzerth/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/firmware.dir/home/ryzerth/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
-  "CMakeFiles/firmware.dir/lib/st7789.cpp.obj"
+  "CMakeFiles/firmware.dir/lib/st77xx.cpp.obj"
   "CMakeFiles/firmware.dir/lib/tpl0401.cpp.obj"
   "CMakeFiles/firmware.dir/src/main.cpp.obj"
   "CMakeFiles/firmware.dir/src/parrots.cpp.obj"

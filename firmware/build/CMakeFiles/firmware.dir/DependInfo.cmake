@@ -279,7 +279,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ryzerth/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles/firmware.dir/home/ryzerth/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
-  "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/lib/st7789.cpp" "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles/firmware.dir/lib/st7789.cpp.obj"
+  "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/lib/st77xx.cpp" "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles/firmware.dir/lib/st77xx.cpp.obj"
   "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/lib/tpl0401.cpp" "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles/firmware.dir/lib/tpl0401.cpp.obj"
   "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/src/main.cpp" "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles/firmware.dir/src/main.cpp.obj"
   "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/src/parrots.cpp" "/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles/firmware.dir/src/parrots.cpp.obj"
