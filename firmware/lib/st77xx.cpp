@@ -1,6 +1,7 @@
 #include "st77xx.h"
 #include <hardware/gpio.h>
 #include <hardware/pwm.h>
+#include "pico/stdlib.h"
 
 namespace ST77XX {
     Driver::Driver(int mosiGPIO, int clkGPIO, int dcGPIO, int rstGPIO, int csGPIO, int blGPIO, int teGPIO) :

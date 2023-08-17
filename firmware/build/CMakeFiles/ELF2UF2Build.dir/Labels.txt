@@ -1,13 +1,13 @@
 # Target labels
  ELF2UF2Build
 # Source files and their labels
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles/ELF2UF2Build
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles/ELF2UF2Build.rule
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/CMakeFiles/ELF2UF2Build-complete.rule
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
-/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
+/home/ryzerth/dc_sdr/firmware/build/CMakeFiles/ELF2UF2Build
+/home/ryzerth/dc_sdr/firmware/build/CMakeFiles/ELF2UF2Build.rule
+/home/ryzerth/dc_sdr/firmware/build/CMakeFiles/ELF2UF2Build-complete.rule
+/home/ryzerth/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
+/home/ryzerth/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+/home/ryzerth/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+/home/ryzerth/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+/home/ryzerth/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+/home/ryzerth/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+/home/ryzerth/dc_sdr/firmware/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule

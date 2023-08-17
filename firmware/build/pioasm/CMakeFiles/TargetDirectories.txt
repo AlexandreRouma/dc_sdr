@@ -1,0 +1,3 @@
+/home/ryzerth/dc_sdr/firmware/build/pioasm/CMakeFiles/pioasm.dir
+/home/ryzerth/dc_sdr/firmware/build/pioasm/CMakeFiles/edit_cache.dir
+/home/ryzerth/dc_sdr/firmware/build/pioasm/CMakeFiles/rebuild_cache.dir

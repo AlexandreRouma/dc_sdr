@@ -32,10 +32,15 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/arm-none-eabi-objdump")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/pico-sdk/src/rp2040/hardware_regs/cmake_install.cmake")
-  include("/mnt/c/Users/ryzerth/Documents/code/dc_sdr/firmware/build/pico-sdk/src/rp2040/hardware_structs/cmake_install.cmake")
+  include("/home/ryzerth/dc_sdr/firmware/build/pico-sdk/src/rp2040/hardware_regs/cmake_install.cmake")
+  include("/home/ryzerth/dc_sdr/firmware/build/pico-sdk/src/rp2040/hardware_structs/cmake_install.cmake")
 
 endif()
 

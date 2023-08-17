@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/elf2uf2.dir/main.cpp.o"
+  "CMakeFiles/elf2uf2.dir/main.cpp.o.d"
   "elf2uf2"
   "elf2uf2.pdb"
 )
